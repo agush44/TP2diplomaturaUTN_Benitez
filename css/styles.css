@@ -74,10 +74,68 @@ main {
   padding: 20px;
 }
 
-/* Cards */
+/* Casas */
 
-.grid,
-.casas {
+.casas-hogwarts h2 {
+  font-size: 2.5rem;
+}
+
+.container-casas {
+  grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.casas-card {
+  width: 70vw;
+  height: 500px;
+  display: flex;
+  background-color: #ffffffb9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 40px;
+}
+
+.casas-card p {
+  font-family: var(--tipo-text);
+  text-align: justify;
+}
+
+.casas-card img {
+  max-height: 500px;
+  max-width: 500px;
+  border-radius: 10px;
+  margin: 0 50px;
+}
+
+/* Hechizos */
+
+.container-hechizos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hechizos-cardContent h3 {
+  font-size: 2rem;
+}
+
+.hechizos-cardContent p {
+  font-size: 1rem;
+  font-family: var(--tipo-text);
+}
+
+/* Personajes */
+
+.grid {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -87,12 +145,7 @@ main {
   padding-bottom: 50px;
 }
 
-.casas {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid .card,
-.casas .casas-card {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,32 +162,10 @@ main {
   background-color: #ffffffb9;
 }
 
-.casas .casas-card {
-  width: 600px;
-  height: 900px;
-  padding: 50px;
-}
-
-.casas h3 {
-  font-size: 2.8rem;
-}
-
-.casas-card p {
-  font-family: var(--tipo-text);
-  padding: 20px;
-  text-align: justify;
-}
-
 .grid .card img {
   max-height: 230px;
   max-width: 230px;
   border-radius: 6px;
-}
-
-.casas img {
-  max-height: 500px;
-  max-width: 500px;
-  border-radius: 10px;
 }
 
 .card-name {
