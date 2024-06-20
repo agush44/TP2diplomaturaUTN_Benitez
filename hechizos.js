@@ -10,7 +10,7 @@ fetch("/data.json")
     hechizos.forEach((hechizo) => {
       $cardHechizos.innerHTML += `
                 <div class="hechizos-card">
-                  <div class="hechizos-cardContent card">
+                  <div class="hechizos-cardContent">
                     <h3>${hechizo.nombre}</h3>
                     <p>${hechizo.descripcion}</p>
                   </div>

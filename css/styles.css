@@ -16,6 +16,15 @@
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 3rem;
+  padding-top: 50px;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
 body {
   font-family: "HP";
   margin: 0;
@@ -76,12 +85,7 @@ main {
 
 /* Casas */
 
-.casas-hogwarts h2 {
-  font-size: 2.5rem;
-}
-
 .container-casas {
-  grid-template-columns: repeat(1, 1fr);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,7 +125,24 @@ main {
 
 .container-hechizos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+.hechizos-card {
+  width: 80%;
+  height: 400px;
+  justify-content: space-evenly;
+  background-color: #ffffffb9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+}
+
+.hechizos-cardContent {
+  padding: 50px;
 }
 
 .hechizos-cardContent h3 {
@@ -131,6 +152,8 @@ main {
 .hechizos-cardContent p {
   font-size: 1rem;
   font-family: var(--tipo-text);
+  text-align: justify;
+  padding: 0 50px;
 }
 
 /* Personajes */
@@ -207,10 +230,80 @@ footer p {
 
 /* Móvil */
 @media only screen and (min-width: 425px) and (max-width: 768px) {
-  main {
+  main,
+  .intro,
+  .casas-hogwarts,
+  .hechizos {
     padding: 0;
   }
 
+  /* Intro */
+
+  .intro {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    padding: 20px 40px;
+  }
+
+  .intro p {
+    font-size: 1.3rem;
+    width: 80%;
+    padding-top: 20px;
+  }
+
+  /* Casas */
+
+  .casas-hogwarts h2 {
+    font-size: 2rem;
+    padding-bottom: 30px;
+  }
+
+  .casas-card {
+    height: auto;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .casas-card img {
+    margin-top: 50px;
+  }
+
+  .card-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 40px;
+  }
+
+  .card-content h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Hechizos */
+  .container-hechizos {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 150px;
+  }
+
+  .hechizos-card {
+    height: auto;
+  }
+
+  .hechizos-cardContent {
+    padding: 0;
+  }
+
+  /* Personajes */
   .characters {
     padding: 0;
   }
@@ -228,6 +321,65 @@ footer p {
 
 /* Tablet */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  main,
+  .intro,
+  .casas-hogwarts,
+  .hechizos {
+    padding: 0;
+  }
+
+  /* Intro */
+  .intro {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    padding: 20px 40px;
+  }
+
+  .intro p {
+    font-size: 1.3rem;
+    width: 80%;
+    padding-top: 20px;
+  }
+
+  /* Casas */
+  .casas-card {
+    height: auto;
+    width: 80%;
+    padding: 30px;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  /* Hechizos */
+  .container-hechizos {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 100px;
+  }
+
+  .hechizos-card {
+    width: 80%;
+    height: auto;
+  }
+
+  .hechizos-cardContent p {
+    padding: 20px;
+  }
+
+  .hechizos-cardContent h3 {
+    font-size: 1.5rem;
+    padding-top: 20px;
+  }
+
+  /* Personajes */
   .grid {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -250,6 +402,65 @@ footer p {
 /* Tablet landscape */
 
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
+  main,
+  .intro,
+  .casas-hogwarts,
+  .hechizos {
+    padding: 0;
+  }
+
+  /* Intro */
+  .intro {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    padding: 20px 40px;
+  }
+
+  .intro p {
+    font-size: 1.3rem;
+    width: 80%;
+    padding-top: 20px;
+  }
+
+  /* Casas */
+  .casas-card {
+    height: auto;
+    width: 80%;
+    padding: 30px;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  /* Hechizos */
+  .container-hechizos {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100vw;
+  }
+
+  .hechizos-card {
+    width: 80%;
+    height: auto;
+  }
+
+  .hechizos-cardContent p {
+    padding: 20px;
+  }
+
+  .hechizos-cardContent h3 {
+    font-size: 1.5rem;
+    padding-top: 30px;
+  }
+
+  /* Personajes */
   .grid {
     justify-content: center;
     margin: 0;
@@ -271,22 +482,23 @@ footer p {
 
 /* Laptop */
 
-@media only screen and (min-width: 1367px) and (max-width: 1600px) {
-  .grid {
-    justify-content: center;
-    margin: 0;
+@media only screen and (min-width: 1367px) and (max-width: 2560px) {
+  .hechizos-card {
+    height: auto;
   }
 
+  /* Personajes */
   .characters {
     padding: 0;
-    margin: 0;
   }
 
   .characters h1 {
-    padding-top: 0;
+    padding-top: 40px;
   }
 
-  .grid .card {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     margin: 0;
   }
 }
