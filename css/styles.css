@@ -17,12 +17,12 @@
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   padding-top: 50px;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url(../assets/images/hp-fondo.jpg);
+  background-image: url(../assets/images/hp.webp);
 }
 
 header {
@@ -78,7 +78,7 @@ main {
 }
 
 .intro p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: var(--tipo-text);
   padding: 20px;
 }
@@ -113,6 +113,7 @@ main {
 .casas-card p {
   font-family: var(--tipo-text);
   text-align: justify;
+  font-size: 1rem;
 }
 
 .casas-card img {
@@ -151,7 +152,7 @@ main {
 }
 
 .hechizos-cardContent p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: var(--tipo-text);
   text-align: justify;
   padding: 0 50px;
